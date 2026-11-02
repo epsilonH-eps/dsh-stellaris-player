@@ -1,0 +1,33 @@
+{
+  "name": "dsh-stellaris-player",
+  "version": "0.1.0",
+  "description": "DSH 插件：让 AI 会读群星状态、下命令，并以「群星 AI」人格玩游戏",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "stellaris",
+    "agent"
+  ],
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.1.7-rc.1",
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
